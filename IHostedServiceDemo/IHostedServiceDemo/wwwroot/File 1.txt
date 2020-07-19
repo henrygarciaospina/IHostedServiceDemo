@@ -1,6 +1,12 @@
-WriteToFileHostedService : Process Started
-WriteToFileHostedService : Process Stopped
-WriteToFileHostedService : Process Started05:28:16
-WriteToFileHostedService : Process Stopped05:28:42
-WriteToFileHostedService : Process Started 17:30:43
-WriteToFileHostedService : Process Stopped 17:31:24
+WriteToFileHostedService : Process Started 19/07/2020 18:16:31
+WriteToFileHostedService : Doing some work at 19/07/2020 18:16:31
+WriteToFileHostedService : Doing some work at 19/07/2020 18:16:36
+WriteToFileHostedService : Doing some work at 19/07/2020 18:16:41
+WriteToFileHostedService : Doing some work at 19/07/2020 18:16:46
+WriteToFileHostedService : Doing some work at 19/07/2020 18:16:51
+WriteToFileHostedService : Doing some work at 19/07/2020 18:16:56
+WriteToFileHostedService : Doing some work at 19/07/2020 18:17:01
+WriteToFileHostedService : Doing some work at 19/07/2020 18:17:06
+WriteToFileHostedService : Doing some work at 19/07/2020 18:17:11
+WriteToFileHostedService : Doing some work at 19/07/2020 18:17:16
+WriteToFileHostedService : Process Stopped 19/07/2020 18:17:18
