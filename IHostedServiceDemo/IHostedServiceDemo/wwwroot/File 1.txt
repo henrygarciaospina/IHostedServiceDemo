@@ -1,0 +1,6 @@
+WriteToFileHostedService : Process Started
+WriteToFileHostedService : Process Stopped
+WriteToFileHostedService : Process Started05:28:16
+WriteToFileHostedService : Process Stopped05:28:42
+WriteToFileHostedService : Process Started 17:30:43
+WriteToFileHostedService : Process Stopped 17:31:24
