@@ -1,12 +1,17 @@
-WriteToFileHostedService : Process Started 19/07/2020 18:16:31
-WriteToFileHostedService : Doing some work at 19/07/2020 18:16:31
-WriteToFileHostedService : Doing some work at 19/07/2020 18:16:36
-WriteToFileHostedService : Doing some work at 19/07/2020 18:16:41
-WriteToFileHostedService : Doing some work at 19/07/2020 18:16:46
-WriteToFileHostedService : Doing some work at 19/07/2020 18:16:51
-WriteToFileHostedService : Doing some work at 19/07/2020 18:16:56
-WriteToFileHostedService : Doing some work at 19/07/2020 18:17:01
-WriteToFileHostedService : Doing some work at 19/07/2020 18:17:06
-WriteToFileHostedService : Doing some work at 19/07/2020 18:17:11
-WriteToFileHostedService : Doing some work at 19/07/2020 18:17:16
-WriteToFileHostedService : Process Stopped 19/07/2020 18:17:18
+WriteToFileHostedService : Process Started 19/07/2020 18:31:54
+WriteToFileHostedService : Doing some work at 19/07/2020 18:31:54
+WriteToFileHostedService : Doing some work at 19/07/2020 18:31:59
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:04
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:09
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:14
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:19
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:24
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:29
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:34
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:39
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:44
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:49
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:54
+WriteToFileHostedService : Doing some work at 19/07/2020 18:32:59
+WriteToFileHostedService : Doing some work at 19/07/2020 18:33:04
+WriteToFileHostedService : Process Stopped 19/07/2020 18:33:05

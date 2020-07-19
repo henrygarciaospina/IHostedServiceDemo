@@ -1,0 +1,13 @@
+WriteToFileHostedServiceSecond : Process Started 19/07/2020 18:31:54
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:31:54
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:32:01
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:32:08
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:32:15
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:32:22
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:32:29
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:32:36
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:32:43
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:32:50
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:32:57
+WriteToFileHostedServiceSecond : Doing some work at 19/07/2020 18:33:04
+WriteToFileHostedServiceSecond : Process Stopped 19/07/2020 18:33:05

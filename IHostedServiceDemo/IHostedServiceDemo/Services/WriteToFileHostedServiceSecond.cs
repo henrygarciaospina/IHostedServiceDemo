@@ -9,20 +9,20 @@ using System.Threading.Tasks;
 
 namespace IHostedServiceDemo.Services
 {
-    public class WriteToFileHostedService : IHostedService, IDisposable
+    public class WriteToFileHostedServiceSecond : IHostedService, IDisposable
     {
         private readonly IHostEnvironment environment;
-        private readonly string fileName = "File 1.txt";
+        private readonly string fileName = "File 2.txt";
         private Timer timer;
-        public WriteToFileHostedService(IHostEnvironment environment) 
+        public WriteToFileHostedServiceSecond(IHostEnvironment environment) 
         {
             this.environment = environment;
         }
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            WriteToFile("WriteToFileHostedService : Process Started " + DateTime.Now.ToString("dd/MM/yyyy H:mm:ss"));
-            /* El método DoWork se ejecuta cada 5 segundos */
-            timer = new Timer(DoWork, null, TimeSpan.Zero, TimeSpan.FromSeconds(5));
+            WriteToFile("WriteToFileHostedServiceSecond : Process Started " + DateTime.Now.ToString("dd/MM/yyyy H:mm:ss"));
+            /* El método DoWork se ejecuta cada 7 segundos */
+            timer = new Timer(DoWork, null, TimeSpan.Zero, TimeSpan.FromSeconds(7));
             return Task.CompletedTask;
         }
 
@@ -37,7 +37,7 @@ namespace IHostedServiceDemo.Services
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
-            WriteToFile("WriteToFileHostedService : Process Stopped " + DateTime.Now.ToString("dd/MM/yyyy H:mm:ss"));
+            WriteToFile("WriteToFileHostedServiceSecond : Process Stopped " + DateTime.Now.ToString("dd/MM/yyyy H:mm:ss"));
             /* Desactiva el timer sino es nulo cuando pare la tarea */
             timer?.Change(Timeout.Infinite, 0);
             return Task.CompletedTask;
@@ -45,7 +45,7 @@ namespace IHostedServiceDemo.Services
 
         private void DoWork(object state) 
         {
-            WriteToFile("WriteToFileHostedService : Doing some work at " + DateTime.Now.ToString("dd/MM/yyyy H:mm:ss"));
+            WriteToFile("WriteToFileHostedServiceSecond : Doing some work at " + DateTime.Now.ToString("dd/MM/yyyy H:mm:ss"));
         }
         public void Dispose()
         {

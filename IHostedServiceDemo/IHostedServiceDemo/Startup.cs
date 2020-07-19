@@ -24,8 +24,10 @@ namespace IHostedServiceDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Configuración de la clase WriteToFileHostedService
+            //Configuración de la clase WriteToFileHostedService (primer servicio)
             services.AddTransient<Microsoft.Extensions.Hosting.IHostedService, WriteToFileHostedService>();
+            //Configuración de la clase WriteToFileHostedServiceSecond (segundo servicio)
+            services.AddTransient<Microsoft.Extensions.Hosting.IHostedService, WriteToFileHostedServiceSecond>();
             services.AddControllersWithViews();
         }
 
