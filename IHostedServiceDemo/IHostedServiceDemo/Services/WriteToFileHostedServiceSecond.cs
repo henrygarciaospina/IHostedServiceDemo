@@ -29,10 +29,8 @@ namespace IHostedServiceDemo.Services
         private void WriteToFile(string message)
         {
             var path = $@"{environment.ContentRootPath}\wwwroot\{fileName}";
-            using (StreamWriter writer = new StreamWriter(path, append: true))
-            {
-                writer.WriteLine(message);
-            }
+            using StreamWriter writer = new StreamWriter(path, append: true);
+            writer.WriteLine(message);
         }
 
         public Task StopAsync(CancellationToken cancellationToken)

@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Routing.Constraints;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -29,10 +26,8 @@ namespace IHostedServiceDemo.Services
         private void WriteToFile(string message)
         {
             var path = $@"{environment.ContentRootPath}\wwwroot\{fileName}";
-            using (StreamWriter writer = new StreamWriter(path, append: true))
-            {
-                writer.WriteLine(message);
-            }
+            using StreamWriter writer = new StreamWriter(path, append: true);
+            writer.WriteLine(message);
         }
 
         public Task StopAsync(CancellationToken cancellationToken)

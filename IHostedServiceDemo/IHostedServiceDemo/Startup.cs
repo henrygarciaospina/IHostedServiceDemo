@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using IHostedServiceDemo.Contexts;
 using IHostedServiceDemo.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,10 +21,21 @@ namespace IHostedServiceDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Configuración de la clase WriteToFileHostedService (primer servicio)
-            services.AddTransient<Microsoft.Extensions.Hosting.IHostedService, WriteToFileHostedService>();
-            //Configuración de la clase WriteToFileHostedServiceSecond (segundo servicio)
-            services.AddTransient<Microsoft.Extensions.Hosting.IHostedService, WriteToFileHostedServiceSecond>();
+            //Configuración del provider para bases de datos SQLServer
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddTransient <Microsoft.Extensions.Hosting.IHostedService, ConsumeScopedService>();
+
+            /*
+             * Desde esta línea
+               //Configuración de la clase WriteToFileHostedService (primer servicio)
+               services.AddTransient<Microsoft.Extensions.Hosting.IHostedService, WriteToFileHostedService>();
+               //Configuración de la clase WriteToFileHostedServiceSecond (segundo servicio)
+               services.AddTransient<Microsoft.Extensions.Hosting.IHostedService, WriteToFileHostedServiceSecond>();
+             * Hasta esta línea la comentareamos ya que son del Ejemplo 3 del Vídeo 35 - Ejecutar Código 
+               Recurrente con IHostedService
+            */
             services.AddControllersWithViews();
         }
 
